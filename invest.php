@@ -3258,6 +3258,9 @@ if ( !class_exists('investCalculator')){
 		function install(){
 			global $wpdb;
 			
+			
+			/// testing install 
+			
 			if ( ! wp_next_scheduled( 'my_task_hook' ) ) {
 				wp_schedule_event( time(), 'twise_daily', 'my_task_hook');
 				//wp_schedule_event( time(), 'every_three_minutes', 'my_task_hook');
